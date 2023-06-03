@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo copy.png" alt="" ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                შემოთავაზებები
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">გრუმინგი</a></li>
+                <li><a class="dropdown-item" href="#">გასეირნება</a></li>
+                <li><a class="dropdown-item" href="#">დატოვება</a></li>
+                <li><a class="dropdown-item" href="#">კვება</a></li>
+                <li><a class="dropdown-item" href="#">დაბანა</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="user">
+            <!-- <a href="./loginform/"><button class="btn btn-primary nia">Sign Up</button></a> -->
+            <!-- <a href="./loginform/"><button class="btn btn-primary nia">Log in</button></a> -->
+            <button class="btn sacdeli" style="color: black;">შესვლა/რეგისტრაცია</button>  
+           
+    </nav>
+    <div class="wrapper">
+        <h1>sign up</h1>
+        <form action="#">
+            <input type="text" placeholder="სახელი გვარი">
+            <input type="text" placeholder="" >
+        </form>
+    </div>
+    <header>
+
+
+
+        <!-- <div class="wrapper">
+            <div class="yveliko">
+            <div class="wrapper_work"></div>
+            <span class="singUp">რეგისტრაცია</span>
+            <span>|</span>
+            <span class="login">შესვლა</span>
+            </div>
+            <div class="wrapper_work">
+              <span class="petOwner">მეპატრონე</span> 
+              <span class="sua">|</span>
+              <span class="personali">პერსონალი</span>
+            </div>
+            <div id="error_message">
+          </div>
+            <form class="my-form"  action="" id="myform" onsubmit="return validate();">
+              <div id="firstName" class="input_field">
+                <input type="text" placeholder="სახელი გვარი" id="name">
+              </div>
+              <div id="lastName" class="input_field">
+                <input type="text" placeholder="ნომერი" id="name">
+              </div>
+              <div id="lastName" class="input_field">
+                <input style="display: none;" class="personNumber" type="text" placeholder="პირადი ნომერი" id="name">
+              </div>
+              <div class="input_field">
+                <input type="email" placeholder="იმეილი" id="email">
+              </div>
+              <div class="input_field">
+                <input type="password" placeholder="პაროლი" id="password">
+              </div>
+              <div id="confirmPassword" class="input_field">
+                <input type="password" placeholder="პაროლის დადასტურება" id="password">
+              </div>
+        
+              <div class="btn">
+                <input type="submit">
+              </div>
+            </form>
+          </div> -->
+
+          <!-- <div class="reg d-none">
+              <div class="options">
+                  <div class="close">
+                      <i class="bi bi-x-lg"></i>
+                  </div>
+                  <button class="btn reg_btn">რეგისტრაცია</button>
+                  <button class="btn logIn_btn">შესვლა</button>
+              </div>
+
+              <div class="regOptions d-none">
+                  <button class="btn mepatrone">მეპატრონე</button>
+                  <button class="btn personali">პერსონალი</button>
+              </div>
+
+              <div class="mepatroneReg d-none">
+                  <label>სახელი</label>
+                  <input class="fName" type="text">
+                  <label>გვარი</label>
+                  <input class="lName" type="text">
+                  <label>ელ. ფოსტა</label>
+                  <input class="email" type="email">
+                  <label>პაროლი</label>
+                  <input class="pass" type="password">
+                  <label>გაიმეორეთ პაროლი</label>
+                  <input class="rePass" type="password">
+                  <label>ტელეფონის ნომერი</label>
+                  <input class="piradiNomeri" type="number">
+                  <button class="btn dadastureba">დადასტურება</button>
+              </div>
+
+              <div class="personaliReg d-none">
+                  <label>სახელი</label>
+                  <input class="fName" type="text">
+                  <label>გვარი</label>
+                  <input class="lName" type="text">
+                  <label>ელ. ფოსტა</label>
+                  <input class="email" type="email">
+                  <label>პაროლი</label>
+                  <input class="pass" type="password">
+                  <label>გაიმეორეთ პაროლი</label>
+                  <input class="rePass" type="password">
+                  <label>პირადი ნომერი</label>
+                  <input class="piradiNomeri" type="number">
+                  <label>ტელეფონის ნომერი</label>
+                  <input class="piradiNomeri" type="number">
+                  <button class="btn dadastureba">დადასტურება</button>
+              </div>
+
+              <div class="logInOptions d-none">
+                  <label>ელ. ფოსტა</label>
+                  <input class="email" type="email">
+                  <label>პაროლი</label>
+                  <input class="pass" type="password">
+                  <button class="btn shesvla">შესვლა</button>
+                  
+              </div>
+
+          </div> -->
+
+        
+  </form>
+</div>
+</div>
+
+
+      <div class="container-fluid container-1">
+        <div class="text-container">
+          <h1>ჩვენ ვზრუნავთ თქვენთან ერთად</h1>
+          <p>
+            <span style="font-size: 1.3rem;">DOG CARE</span> დაგეხმარებათ მეტი კომფორტი შეუქმნათ საკუთარ თავებსა და
+            თქვენს შინაურ ცხოველებს
+          </p>
+        </div>
+
+        
+      </div>
+    </header>
+
+    <main>
+            <div class="forservices">
+       <h1>სერვისები რომლებსაც გთავაზობთ:</h1>
+       <div class="services">
+           <div class="service service1">
+               <img src="https://otservices.wustl.edu/wp-content/uploads/2020/05/Walking-Dog.jpg" alt="">
+               <div class="absolute absolute1">
+                   <h1>გასეირნება</h1>
+               </div>
+           </div>
+           <div class="service service2">
+               <img src="https://images.ctfassets.net/f7tuyt85vtoa/aLpA08MU0o95DOwirZoOc/41f82697e0dde05e54d7dd9b095e5f63/PEts-like-humans-article-COVER.jpg" alt="">
+               <div class="absolute absolute2">
+                   <h1>დატოვება</h1>
+               </div>
+           </div>
+           <div class="service service3">
+               <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F11%2F09%2Fhow-to-bathe-a-dog-in-winter-1397320357-2000.jpg" alt="">
+               <div class="absolute absolute3">
+                   <h1>დაბანა</h1>
+               </div>
+           </div>
+           <div class="service service4">
+               <img src="https://dnacenter.com/wp-content/uploads/2020/01/inset-vet-pet-dog.jpg" alt="">
+               <div class="absolute absolute4">
+                   <h1>სამედიცინო</h1>
+               </div>
+           </div>
+       </div>
+       <!-- <span>
+           <a href="#">დარეგისტრირდი</a>
+           <span>პერსონალურ კონსულტაციაზე ან დაგვირეკე ნომერზე:</span>
+           <a href="#">511 195 429</a>
+       </span> -->
+    </div>
+    <div class="posts-text">
+          <h1>პოსტები</h1>
+          </div>
+      <div class="cards">
+          
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              ვეძებ ადამიანს რომელიც დაიტოვებს ძაღლს 3 დღით 2 ივნისიდან 3
+              ივნისამდე, ესაჭიროება დღეში 2-ჯერ კვება.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              ვეძებ ადამიანს რომელიც დაიტოვებს ძაღლს 3 დღით 2 ივნისიდან 3
+              ივნისამდე, ესაჭიროება დღეში 2-ჯერ კვება.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              ვეძებ ადამიანს რომელიც დაიტოვებს ძაღლს 3 დღით 2 ივნისიდან 3
+              ივნისამდე, ესაჭიროება დღეში 2-ჯერ კვება.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              ვეძებ ადამიანს რომელიც დაიტოვებს ძაღლს 3 დღით 2 ივნისიდან 3
+              ივნისამდე, ესაჭიროება დღეში 2-ჯერ კვება.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              ვეძებ ადამიანს რომელიც დაიტოვებს ძაღლს 3 დღით 2 ივნისიდან 3
+              ივნისამდე, ესაჭიროება დღეში 2-ჯერ კვება.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://images.newscientist.com/wp-content/uploads/2021/11/24114209/PRI_211645505.jpg?crop=1:1,smart&width=1200&height=1200&upscale=true"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            
+            <p class="card-text">
+              მესაჭიროება ადამიანი რომელიც 4 ივნისს გაასეირნებს ძაღლს საღამოს 8 საათზე
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img style="    object-position:0 .02rem;"
+            src="https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img  style="    object-position:0 -7rem;"
+            src="https://images.pexels.com/photos/895259/pexels-photo-895259.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/english-mastiff-dog-breed-royalty-free-image-1646819177.jpg?resize=480:*"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/Skyword/images/azawakh-dog-standing-on-path-SW.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">იხილე სრულად</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">მთავარი</a></li>
+                <li class="list-inline-item"><a href="#">სერვისები</a></li>
+                <li class="list-inline-item"><a href="#">საკონტაქტო</a></li>
+                <li class="list-inline-item"><a href="#">+995 599 015 200</a></li>
+               
+            </ul>
+            <p class="copyright">Moshale Mtlianad vax chemikai © 2023</p>
+        </footer>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
